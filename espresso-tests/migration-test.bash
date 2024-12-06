@@ -97,7 +97,7 @@ cd $TESTNODE_DIR
 ./espresso-tests/create-espresso-integrated-nitro-node.bash
 
 # Wait for CHILD_CHAIN_RPC_URL to be available
-# * Essential migration sub step * This is technically essential to the migration, but doesn't usually take long and shouldn't need to be programatically determined during a live migration.
+# * Essential migration sub step * This is technically essential to the migration, but doesn't usually take long and shouldn't need to be programmatically determined during a live migration.
 while ! curl -s $CHILD_CHAIN_RPC_URL > /dev/null; do
   echo "Waiting for $CHILD_CHAIN_RPC_URL to be available..."
   sleep 5
