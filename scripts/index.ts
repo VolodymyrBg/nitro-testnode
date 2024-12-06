@@ -37,7 +37,7 @@ async function main() {
     })
     .options(stressOptions)
     .options({
-      espresso: { boolean: true, decription: 'use Espresso Sequencer for sequencing and DA', default: false },
+      espresso: { boolean: true, description: 'use Espresso Sequencer for sequencing and DA', default: false },
       espressoUrl: { string: true, description: 'Espresso Sequencer url', default: 'http://espresso-dev-node:41000' },
       lightClientAddress: { string: true, description: 'address of the light client contract', default: ''},
       enableEspressoFinalityNode: {boolean: true, description: 'enable finality node', default: false},
